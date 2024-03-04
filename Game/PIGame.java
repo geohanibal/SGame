@@ -14,23 +14,44 @@ abstract class PIGame extends Game
     static void main()
     {
         // Map Objecten
-        new GameObject(0,0,0,"path-l");
-        new GameObject(1,0,1,"path-l");
-        new GameObject(0,1,3,"path-l");
-        new GameObject(1,1,2,"path-l");
+        new GameObject(0, 0, 0, "path-e");
+        new GameObject(1, 0, 0, "path-i");
+        new GameObject(2, 0, 1, "path-t");
+        new GameObject(3, 0, 0, "path-i");
+        new GameObject(3, 0, 0, "goal");
+        new GameObject(4, 0, 0, "bridge");
+        new GameObject(0, 1, 0, "path-e");
+        new GameObject(1, 1, 0, "path-i");
+        new GameObject(2, 1, 0, "path-x");
+        new GameObject(3, 1, 2, "path-e");
+        new GameObject(4, 1, 3, "water-l");
+        new GameObject(0, 2, 0, "path-e");
+        new GameObject(1, 2, 0, "path-i");
+        new GameObject(2, 2, 0, "path-x");
+        new GameObject(3, 2, 0, "path-i");
+        new GameObject(4, 2, 2, "path-e");
+        new GameObject(0, 3, 0, "path-e");
+        new GameObject(1, 3, 0, "path-i");
+        new GameObject(2, 3, 2, "path-l");
+        new GameObject(3, 3, 0, "water-l");
+        new GameObject(4, 3, 0, "water-i");
         
-        
+        //NPC
+        new GameObject(1, 0, 2, "claudius");
+        new GameObject(0, 1, 0, "laila");
+        new GameObject(3, 2, 2, "child");
         
         //Player
         final GameObject player1; // Variable
-        player1 = new GameObject(0,0,0,"laila");
+        player1 = new GameObject(0,3,0,"laila");
         //blick nach 1-  unter (direckt) 2- left 3 oben 0- recht
         player1.setRotation(1);
         
+        int key;
         
-        final int key = getNextKey(); // final, es muss nicht gäendert werden
         while(true){
-            switch(key){
+           key = getNextKey(); // final, es muss nicht gäendert werden
+          switch(key){
             case VK_RIGHT:
                 player1.setLocation(player1.getX() + 1,player1.getY());
                 player1.setRotation(0);
@@ -54,8 +75,12 @@ abstract class PIGame extends Game
             default:
                 playSound("error");
                 break; 
-        };sleep(100);
-       
+         };
+
+         if(key == VK_ESCAPE){
+             player1.setVisible(false);
+             break;
+         }
+        }     
+      } 
     }  
-    }
-}
