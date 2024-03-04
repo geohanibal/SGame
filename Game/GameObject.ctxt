@@ -1,0 +1,46 @@
+#BlueJ class context
+comment0.target=GameObject
+comment0.text=\r\n\ Die\ Klasse\ f\u00FCr\ Spielobjekte.\ Ein\ Spielobjekt\ wird\ auf\ einem\ Gitter\ platziert,\r\n\ dessen\ Ursprung\ am\ oberen,\ linken\ Rand\ der\ Zeichenfl\u00E4che\ ist.\ x-Koordinaten\r\n\ wachsen\ nach\ rechts,\ y-Koordinaten\ nach\ unten.\ Ein\ Spielobjekt\ hat\ eine\ Rotation,\r\n\ die\ 0\ in\ Richtung\ +x,\ 1\ in\ Richtung\ +y,\ 2\ in\ Richtung\ -x\ und\ 3\ in\ Richtung\ -y\r\n\ ist.\ Ein\ Spielobjekt\ hat\ au\u00DFerdem\ eine\ visuelle\ Erscheinung,\ die\ durch\ ein\ Bild\r\n\ vorgegeben\ ist.\ Dieses\ kann\ entweder\ aus\ einer\ geladenen\ Grafikdatei\ stammen\ oder\r\n\ direkt\ gesetzt\ werden.\ F\u00FCr\ das\ Laden\ aus\ Dateien\ existiert\ die\ Konvention,\ dass\r\n\ abh\u00E4ngig\ von\ der\ Rotation\ Dateien\ mit\ den\ entsprechenden\ Endungen\ "-0",\ "-1",\r\n\ "-2"\ und\ "-3"\ geladen\ werden,\ wenn\ es\ sie\ gibt.\ Grafikdateien\ werden\ im\r\n\ Unterverzeichnis\ "images"\ und\ Sound-Dateien\ im\ Unterverzeichnis\ "sounds"\r\n\ erwartet.\r\n\r\n\ @author\ Thomas\ R\u00F6fer\r\n
+comment1.params=x\ y\ rotation\ fileName
+comment1.target=GameObject(int,\ int,\ int,\ java.lang.String)
+comment1.text=\r\n\ Erzeugen\ und\ Anzeigen\ eines\ neuen\ Spielobjekts.\r\n\ @param\ x\ Die\ x-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @param\ y\ Die\ y-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @param\ rotation\ Die\ Rotation\ dieses\ Spielobjekts\ (0\ \=\ +x\ ...\ 3\ \=\ -y).\r\n\ @param\ fileName\ Der\ Dateiname\ des\ Bildes,\ durch\ das\ dieses\ Spielobjekt\r\n\ \ \ \ \ \ \ \ \ dargestellt\ wird.\r\n
+comment10.params=fileName
+comment10.target=void\ setImage(java.lang.String)
+comment10.text=\r\n\ Setzen\ des\ Bildes,\ mit\ dem\ dieses\ Spielobjekt\ dargestellt\ wird.\r\n\ @param\ fileName\ Der\ Name\ der\ Datei.\ Sie\ wird\ im\ Unterverzeichnis\ "images"\r\n\ \ \ \ \ \ \ \ \ gesucht.\ Wenn\ keine\ Dateiendung\ angegeben\ wurde,\ wird\ ".png"\r\n\ \ \ \ \ \ \ \ \ angeh\u00E4ngt.\ Es\ wird\ zuerst\ versucht,\ eine\ Version\ passend\ zur\r\n\ \ \ \ \ \ \ \ \ aktuellen\ Rotation\ zu\ laden,\ indem\ die\ entsprechende\ Erg\u00E4nzung\ "-0",\r\n\ \ \ \ \ \ \ \ \ "-1",\ "-2"\ oder\ "-3"\ an\ den\ Dateinamen\ angeh\u00E4ngt\ wird\ (vor\ der\r\n\ \ \ \ \ \ \ \ \ Dateiendung,\ d.h.\ dem\ Punkt).\ Wird\ keine\ solche\ Variante\ gefunden,\r\n\ \ \ \ \ \ \ \ \ wird\ der\ Dateiname\ direkt\ verwendet.\r\n\ @throws\ IllegalArgumentException\ Die\ Datei\ konnte\ nicht\ gefunden\ werden\ oder\r\n\ \ \ \ \ \ \ \ \ sie\ enth\u00E4lt\ kein\ Bild.\r\n
+comment11.params=image
+comment11.target=void\ setImage(java.awt.image.BufferedImage)
+comment11.text=\r\n\ Setzen\ des\ Bildes,\ mit\ dem\ dieses\ Spielobjekt\ dargestellt\ wird.\r\n\ @param\ image\ Ein\ Bild.\r\n
+comment12.params=
+comment12.target=java.awt.image.BufferedImage\ getImage()
+comment12.text=\r\n\ Liefert\ das\ Bild,\ mit\ dem\ dieses\ Spielobjekt\ dargestellt\ wird.\ Das\ Bild\ darf\r\n\ nicht\ ver\u00E4ndert\ werden,\ da\ es\ m\u00F6glicherweise\ von\ mehreren\ Spielobjekten\r\n\ gemeinsam\ genutzt\ wird.\r\n\ @return\ Das\ Bild.\r\n
+comment13.params=visible
+comment13.target=void\ setVisible(boolean)
+comment13.text=\r\n\ Macht\ dieses\ Spielobjekt\ sichtbar\ bzw.\ versteckt\ es.\r\n\ @param\ visible\ Soll\ das\ Objekt\ sichtbar\ in\ der\ Zeichenfl\u00E4che\ sein?\r\n
+comment14.params=
+comment14.target=boolean\ isVisible()
+comment14.text=\r\n\ Ist\ das\ Spielobjekt\ sichtbar,\ also\ Teil\ der\ Zeichenfl\u00E4che?\r\n\ Diese\ Funktion\ liefert\ nicht,\ ob\ das\ Spielobjekt\ innerhalb\ der\ Grenzen\ der\r\n\ Zeichenfl\u00E4che\ zu\ sehen\ ist,\ sondern\ nur,\ ob\ es\ generell\ dazu\ geh\u00F6rt.\r\n\ @return\ Ist\ es\ sichtbar?\r\n
+comment2.params=x\ y\ image
+comment2.target=GameObject(int,\ int,\ java.awt.image.BufferedImage)
+comment2.text=\r\n\ Erzeugen\ und\ anzeigen\ eines\ neuen\ Spielobjekts.\r\n\ @param\ x\ Die\ x-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @param\ y\ Die\ y-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @param\ image\ Das\ Bild,\ durch\ das\ dieses\ Spielobjekt\ dargestellt\ wird.\r\n
+comment3.params=x\ y\ offset
+comment3.target=void\ setLocation(int,\ int,\ double)
+comment3.text=\r\n\ Bewegt\ das\ Spielobjekt\ an\ eine\ andere\ Position.\r\n\ @param\ x\ Die\ neue\ x-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @param\ y\ Die\ neue\ y-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @param\ offset\ Ein\ Versatz\ 0\ bis\ kleiner\ 1\ in\ Richtung\ "vorne".\r\n
+comment4.params=x\ y
+comment4.target=void\ setLocation(int,\ int)
+comment4.text=\r\n\ Bewegt\ das\ Spielobjekt\ an\ eine\ andere\ Position.\r\n\ @param\ x\ Die\ neue\ x-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @param\ y\ Die\ neue\ y-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n
+comment5.params=
+comment5.target=int\ getX()
+comment5.text=\r\n\ Liefern\ der\ aktuellen\ x-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @return\ Die\ x-Koordinate.\r\n
+comment6.params=
+comment6.target=int\ getY()
+comment6.text=\r\n\ Liefern\ der\ aktuellen\ y-Koordinate\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @return\ Die\ y-Koordinate.\r\n
+comment7.params=
+comment7.target=double\ getOffset()
+comment7.text=\r\n\ Liefern\ des\ Versatzes\ in\ Richtung\ "vorne"\ dieses\ Spielobjekts.\r\n\ @return\ Ein\ Wert\ im\ Bereich\ 0\ bis\ kleiner\ 1.\r\n
+comment8.params=rotation
+comment8.target=void\ setRotation(int)
+comment8.text=\r\n\ Setzen\ der\ Rotation\ dieses\ Spielobjekts.\r\n\ @param\ rotation\ Die\ Rotation\ im\ Gitter\ (0\ \=\ +x\ ...\ 3\ \=\ -y).\r\n
+comment9.params=
+comment9.target=int\ getRotation()
+comment9.text=\r\n\ Liefern\ der\ Rotation\ dieses\ Spielobjekts\ im\ Gitter.\r\n\ @return\ Die\ Rotation\ im\ Gitter\ (0\ \=\ +x\ ...\ 3\ \=\ -y).\r\n
+numComments=15
