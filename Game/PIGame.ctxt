@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=PIGame
+comment0.text=\r\n\ Dies\ ist\ die\ Hauptklasse\ eines\ Spiels.\ Sie\ enth\u00E4lt\ die\ Hauptmethode,\ die\ zum\r\n\ Starten\ des\ Spiels\ aufgerufen\ werden\ muss.\r\n\r\n\ @author\ MR.\ Robot\r\n
+comment1.params=
+comment1.target=void\ main()
+comment1.text=Das\ Spiel\ beginnt\ durch\ Aufruf\ dieser\ Methode.
+numComments=2
