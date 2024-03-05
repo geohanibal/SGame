@@ -60,27 +60,30 @@ abstract class PIGame extends Game
             case VK_LEFT:
                 player1.setLocation(player1.getX() - 1, player1.getY());
                 player1.setRotation(2);
-                playSound("step");
+               // playSound("step");
                 break;
             case VK_UP:
                 player1.setLocation(player1.getX(), player1.getY() - 1);
                 player1.setRotation(3);
-                playSound("step");
+               // playSound("step");
                 break;
             case VK_DOWN:
                 player1.setLocation(player1.getX(), player1.getY() + 1);
                 player1.setRotation(1);
-                playSound("step");
+               // playSound("step");
                 break;
             default:
                 playSound("error");
                 break; 
          };
+         playSound("step");
+       //  continue;
 
-         if(key == VK_ESCAPE){
+        /* if(key == VK_ESCAPE){
              player1.setVisible(false);
              break;
-         }
+             
+         }*/
         }     
       } 
     }  
