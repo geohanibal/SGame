@@ -15,6 +15,7 @@ class Turner
         this.maxCounter = maxCounter; 
     }
     
+
     void act()
     {
          
@@ -26,8 +27,7 @@ class Turner
             turn(-2);
             
             counter = 0;
-        }
-       
+        } 
         
     }
     

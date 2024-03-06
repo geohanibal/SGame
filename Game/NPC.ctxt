@@ -1,10 +1,9 @@
 #BlueJ class context
 comment0.target=NPC
-comment0.text=\r\n\ Diese\ Klasse\ definiert\ <Zusammenfassung\ erg\u00E4nzen>\r\n\r\n\ @author\ MR.\ Robot\r\n
+comment0.text=\r\n\ Diese\ Klasse\ definiert\ <Zusammenfassung\ erg\u00E4nzen>\r\n\ diese\ Klasse\ bezeichnet\ sich\ bewebung\ von\ NPC\r\n\ \r\n\ @author\ MR.\ Robot\r\n
 comment1.params=bot\ stepMax\ stepCounter
 comment1.target=NPC(GameObject,\ int,\ int)
-comment2.params=
-comment2.target=void\ act()
-comment3.params=direction
-comment3.target=void\ turn(int)
-numComments=4
+comment2.params=player1
+comment2.target=void\ act(GameObject)
+comment2.text=\r\n\ ein\ Method\ act()\ nbewebung\ f\u00FCr\ NPC\r\n\ blick\ nach\ 1-\ \ unter\ (direckt)\ 2-\ left\ 3\ oben\ 0-\ recht\r\n
+numComments=3

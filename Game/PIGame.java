@@ -37,18 +37,23 @@ abstract class PIGame extends Game
         new GameObject(4, 3, 0, "water-i");
         
         
-        //NPC      
-        final NPC npc1 = new NPC(new GameObject(2, 0, 0, "claudius"),6,2 );
-        final NPC npc2 = new NPC(new GameObject(1, 1, 0, "woman"),6,1);
-        final NPC npc3 = new NPC(new GameObject(2, 2, 0, "child"),8,3);
+        
+        //NPC   
+        // final GameObject bot, final int stepMax,  int stepCounter
+        final NPC npc1 = new NPC(new GameObject(1, 0, 2, "claudius"),3,2 );
+        final NPC npc2 = new NPC(new GameObject(0, 1, 0, "woman"),3,0);
+        final NPC npc3 = new NPC(new GameObject(3, 2, 2, "child"),4,1);
+        
         //Player
         final GameObject player1 = new GameObject(0,3,0,"laila");
+        
         //blick nach 1-  unter (direckt) 2- left 3 oben 0- recht
         player1.setRotation(1);
         
+               
         int key;
         
-        while(true){
+        while(player1.isVisible()){
            key = getNextKey(); // final, es muss nicht gäendert werden
           switch(key){
             case VK_RIGHT:
@@ -78,9 +83,11 @@ abstract class PIGame extends Game
          playSound("step");
          
          sleep(200);
-         npc1.act();
-         npc2.act();
-         npc3.act();
+         npc1.act(player1);
+         npc2.act(player1);
+         npc3.act(player1);
+         
+        
        //  continue;
 
         /* if(key == VK_ESCAPE){
