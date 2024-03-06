@@ -36,14 +36,13 @@ abstract class PIGame extends Game
         new GameObject(3, 3, 0, "water-l");
         new GameObject(4, 3, 0, "water-i");
         
-        //NPC
-        new GameObject(1, 0, 2, "claudius");
-        new GameObject(0, 1, 0, "laila");
-        new GameObject(3, 2, 2, "child");
         
+        //NPC      
+        final NPC npc1 = new NPC(new GameObject(2, 0, 0, "claudius"),6,2 );
+        final NPC npc2 = new NPC(new GameObject(1, 1, 0, "woman"),6,1);
+        final NPC npc3 = new NPC(new GameObject(2, 2, 0, "child"),8,3);
         //Player
-        final GameObject player1; // Variable
-        player1 = new GameObject(0,3,0,"laila");
+        final GameObject player1 = new GameObject(0,3,0,"laila");
         //blick nach 1-  unter (direckt) 2- left 3 oben 0- recht
         player1.setRotation(1);
         
@@ -77,6 +76,11 @@ abstract class PIGame extends Game
                 break; 
          };
          playSound("step");
+         
+         sleep(200);
+         npc1.act();
+         npc2.act();
+         npc3.act();
        //  continue;
 
         /* if(key == VK_ESCAPE){

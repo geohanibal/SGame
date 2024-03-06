@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=NPC
+comment0.text=\r\n\ Diese\ Klasse\ definiert\ <Zusammenfassung\ erg\u00E4nzen>\r\n\r\n\ @author\ MR.\ Robot\r\n
+comment1.params=bot\ stepMax\ stepCounter
+comment1.target=NPC(GameObject,\ int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=direction
+comment3.target=void\ turn(int)
+numComments=4
