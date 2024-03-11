@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=NPC
-comment0.text=\r\n\ Diese\ Klasse\ definiert\ <Zusammenfassung\ erg\u00E4nzen>\r\n\ diese\ Klasse\ bezeichnet\ sich\ bewebung\ von\ NPC\r\n\ \r\n\ @author\ MR.\ Robot\r\n
+comment0.text=\r\n\ Diese\ Klasse\ definiert\ <Zusammenfassung\ erg\u00E4nzen>\r\n\ diese\ Klasse\ steuert\ sich\ eine\ NPC\r\n\ \r\n\ @author\ MR.\ Robot\r\n
 comment1.params=bot\ stepMax\ stepCounter
 comment1.target=NPC(GameObject,\ int,\ int)
 comment2.params=player1

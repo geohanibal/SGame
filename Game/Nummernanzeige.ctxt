@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Nummernanzeige
+comment0.text=\r\n\ Diese\ Klasse\ definiert\ <Zusammenfassung\ erg\u00E4nzen>\r\n\r\n\ @author\ MR.\ Robot\r\n
+comment1.params=anzeigeLimit
+comment1.target=Nummernanzeige(int)
+comment2.params=
+comment2.target=int\ gibWert()
+comment2.text=\r\n\ Liefern\ den\ aktuellen\ Wert\ als\ Zahl\r\n\ @return\ Der\ aktuelle\ Wert.\ \r\n
+comment3.params=
+comment3.target=java.lang.String\ gibAnzeigewert()
+comment4.params=ersatzwert
+comment4.target=void\ setzeWert(int)
+comment5.params=
+comment5.target=void\ erh\u00F6hen()
+numComments=6

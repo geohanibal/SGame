@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Zeitanzeige
+comment0.text=\r\n\ Diese\ Klasse\ zeigt\ eine\ Digitaluhr\ an,\ bei\ der\ sich\ die\ Zeit\ als\r\n\ f\u00FCnfstellige\ Zeichenkette\ setzen\ l\u00E4sst.\r\n\r\n\ @author\ Thomas\ R\u00F6fer\r\n
+comment1.params=
+comment1.target=Zeitanzeige()
+comment1.text=\r\n\ Erzeugt\ eine\ neu\ Zeitanzeige,\ die\ ein\ Fester\ \u00F6ffnet\ und\ einen\r\n\ Digitalwecker\ darin\ anzeigt.\r\n
+comment2.params=zeit
+comment2.target=void\ zeige(java.lang.String)
+comment2.text=\r\n\ Zeige\ eine\ neue\ Uhrzeit\ an.\r\n\ @param\ zeit\ Die\ neue\ Uhrzeit\ als\ f\u00FCnfstellige\ Zeichenkette.\r\n
+comment3.params=stunden\ minuten
+comment3.target=void\ main(int,\ int)
+comment3.text=\r\n\ Erzeugt\ die\ Uhr\ und\ l\u00E4sst\ sie\ laufen.\ Aktuell\ l\u00E4uft\ sie\ 60-mal\ zu\r\n\ schnell.\r\n\ @param\ stunden\ Die\ Stundenzahl\ der\ Anfangsuhrzeit.\r\n\ @param\ minuten\ Die\ Minutenzahl\ der\ Anfangsuhrzeit.\r\n
+numComments=4

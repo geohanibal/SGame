@@ -279,7 +279,7 @@ class GameObject extends Game
      * @param y Die y-Koordinate dieses Spielobjekts im Gitter.
      * @param image Das Bild, durch das dieses Spielobjekt dargestellt wird.
      */
-    private GameObject(final int x, final int y, final BufferedImage image)
+    GameObject(final int x, final int y, final BufferedImage image)
     {
         this.x = x;
         this.y = y;
@@ -443,7 +443,7 @@ class GameObject extends Game
      * Setzen des Bildes, mit dem dieses Spielobjekt dargestellt wird.
      * @param image Ein Bild.
      */
-    private void setImage(final BufferedImage image)
+    void setImage(final BufferedImage image)
     {
         // Das Bild muss existieren, sonst kommt es beim Zeichnen zum Fehler.
         if (image == null) {

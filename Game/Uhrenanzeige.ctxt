@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Uhrenanzeige
+comment0.text=\r\n\ Diese\ Klasse\ definiert\ <Zusammenfassung\ erg\u00E4nzen>\r\n\r\n\ @author\ MR.\ Robot\r\n
+comment1.params=
+comment1.target=Uhrenanzeige()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ eine\ Instanz\ der\ Uhrenanzeige.\r\n\ Mit\ diesem\ Konstruktor\ wird\ die\ Anzeige\ auf\ 00\:00\ initialisiert.\r\n
+comment2.params=stunde\ minute
+comment2.target=Uhrenanzeige(int,\ int)
+comment2.text=\r\n\ Konstruktor\ f\u00FCr\ eine\ Instanz\ der\ Uhrenanzeige.\r\n\ Mit\ diesem\ Konstruktor\ wird\ die\ Anzeige\ auf\ den\ Wert\r\n\ initialisiert,\ der\ durch\ 'stunde'\ und\ 'minute'\r\n\ definiert\ ist.\r\n\ @param\ stunde\ Die\ Stunde\ der\ Uhrzeit.\r\n\ @param\ minute\ Die\ Minute\ der\ Uhrzeit.\r\n
+comment3.params=
+comment3.target=void\ anzeigeAktualisieren()
+comment3.text=\r\n\ Aktualisiere\ die\ Anzeige\ aus\ den\ intern\ gespeicherten\ Werten\ f\u00FCr\r\n\ Stunden\ und\ Minuten.\r\n
+comment4.params=stunde\ minute
+comment4.target=void\ setzeUhrzeit(int,\ int)
+comment4.text=\r\n\ Stellen\ der\ Anzeige\ auf\ den\ Wert,\ der\ durch\ 'stunde'\ und\r\n\ 'minute'\ definiert\ ist.\r\n\ @param\ stunde\ Die\ Stunde\ der\ Uhrzeit.\r\n\ @param\ minute\ Die\ Minute\ der\ Uhrzeit.\r\n
+comment5.params=
+comment5.target=void\ taktsignalGeben()
+comment5.text=\r\n\ Lasse\ die\ Uhr\ eine\ Minute\ weiterz\u00E4hlen.\r\n
+numComments=6

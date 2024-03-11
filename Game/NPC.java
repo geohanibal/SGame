@@ -1,13 +1,16 @@
 /**
  * Diese Klasse definiert <Zusammenfassung ergänzen>
- * diese Klasse bezeichnet sich bewebung von NPC
+ * diese Klasse steuert sich eine NPC
  * 
  * @author MR. Robot
  */
 class NPC 
 {
+    /** @param erzägt neue Objekt */ 
     private final GameObject bot;
+    /** @param Anzahl der schritte für eine Hin und Zurückdrehung*/
     private final int stepMax;
+    /** @param Zählt die Anzahl der Schritte */
     private int stepCounter;
     
 
