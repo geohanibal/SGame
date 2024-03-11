@@ -1,5 +1,8 @@
 // Importieren der VK_*-Tastenkonstanten
 import static java.awt.event.KeyEvent.*;
+import static java.lang.Thread.sleep;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Dies ist die Hauptklasse eines Spiels. Sie enthält die Hauptmethode, die zum
@@ -50,6 +53,18 @@ abstract class PIGame extends Game
         //blick nach 1-  unter (direckt) 2- left 3 oben 0- recht
         player1.setRotation(1);
         
+         // Timer für regelmäßige NPC-Aktionen
+        Timer npcTimer = new Timer();
+        npcTimer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                npc1.act(player1);
+
+            }
+        }, 0, 1000); // Startet sofort, wiederholt sich alle 1000ms
+        
+
+        
                
         int key;
         
@@ -80,21 +95,17 @@ abstract class PIGame extends Game
                 playSound("error");
                 break; 
          };
-         playSound("step");
          
+         playSound("step");
          sleep(200);
-         npc1.act(player1);
+         
          npc2.act(player1);
          npc3.act(player1);
-         
         
-       //  continue;
 
-        /* if(key == VK_ESCAPE){
-             player1.setVisible(false);
-             break;
-             
-         }*/
-        }     
+        }
+
+       npcTimer.cancel();
+        
       } 
     }  

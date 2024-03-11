@@ -4,4 +4,6 @@ comment0.text=\r\n\ Dies\ ist\ die\ Hauptklasse\ eines\ Spiels.\ Sie\ enth\u00E4
 comment1.params=
 comment1.target=void\ main()
 comment1.text=Das\ Spiel\ beginnt\ durch\ Aufruf\ dieser\ Methode.
-numComments=2
+comment2.params=
+comment2.target=void\ run()
+numComments=3
