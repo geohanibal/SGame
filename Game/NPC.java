@@ -41,7 +41,7 @@ class NPC
         
         bot.playSound("step");
 
-        System.out.println("Counter = " + stepCounter);
+       
         stepCounter ++;
         
         if(stepCounter == stepMax ){

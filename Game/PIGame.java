@@ -41,11 +41,15 @@ abstract class PIGame extends Game
         
         
         
+        
         //NPC   
         // final GameObject bot, final int stepMax,  int stepCounter
         final NPC npc1 = new NPC(new GameObject(1, 0, 2, "claudius"),3,2 );
         final NPC npc2 = new NPC(new GameObject(0, 1, 0, "woman"),3,0);
         final NPC npc3 = new NPC(new GameObject(3, 2, 2, "child"),4,1);
+        
+        //Ruls
+         final Rules rules = new Rules(2,2);
         
         //Player
         final GameObject player1 = new GameObject(0,3,0,"laila");
@@ -66,11 +70,35 @@ abstract class PIGame extends Game
 
         
                
-        int key;
+        
         
         while(player1.isVisible()){
-           key = getNextKey(); // final, es muss nicht gäendert werden
-          switch(key){
+          final int  key = getNextKey(); // final, es muss nicht gäendert werden
+           
+           // das ist nur für rules 
+            if (key == VK_RIGHT && rules.isLegal(player1, 1, 0)) {
+                player1.setRotation(0);
+                player1.setLocation(player1.getX() + 1, player1.getY());
+            }
+            else if (key == VK_DOWN && rules.isLegal(player1, 0, 1)) {
+                player1.setRotation(1);
+                player1.setLocation(player1.getX(), player1.getY() + 1);
+            }
+            else if (key == VK_LEFT && rules.isLegal(player1, -1, 0)) {
+                player1.setRotation(2);
+                player1.setLocation(player1.getX() - 1, player1.getY());
+            }
+            else if (key == VK_UP && rules.isLegal(player1, 0, -1)) {
+                player1.setRotation(3);
+                player1.setLocation(player1.getX(), player1.getY() - 1);
+            }
+            else {
+                playSound("error");
+                continue;
+            }
+           
+           //das ist ein metho obiejt für Stoirung des Objekts
+          /* switch(key){
             case VK_RIGHT:
                 player1.setLocation(player1.getX() + 1,player1.getY());
                 player1.setRotation(0);
@@ -94,7 +122,7 @@ abstract class PIGame extends Game
             default:
                 playSound("error");
                 break; 
-         };
+         }; */
          
          playSound("step");
          sleep(200);

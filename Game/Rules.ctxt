@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Rules
+comment0.text=\r\n\ Diese\ klasse\ pr\u00FCft\ g\u00FCltigkeit\ von\ Z\u00FCgen.\r\n\ das\ ist\ f\u00FCr\ Objekten.\r\n\ @author\ Sergi\ Koniashvili\ und\ Thomas\ R\u00F6fer\r\n
+comment1.params=x\ y
+comment1.target=Rules(int,\ int)
+comment1.text=\r\n\ Erzeugt\ eine\ neue\ Regel-Objekt.\r\n\ @param\ x\ \ Die\ x-Koordinate\ der\ Mitte\ beider\ Quadrate,\ also\ des\ Spielfelds.\r\n\ @param\ y\ \ Die\ y-Koordinate\ der\ Mitte\ beider\ Quadrate,\ also\ des\ Spielfelds.\ \r\n
+comment2.params=object\ dirX\ dirY
+comment2.target=boolean\ isLegal(GameObject,\ int,\ int)
+comment2.text=\r\n\u00FCberpruft,\ ob\ ein\ Zug\ legal\ ist.\r\n@param\ object\ das\ Object,\ das\ den\ zug\ ausF\u00FChren\ soll;\r\n@param\ dirX,das\ x-Koordinate\ \ darf\ nur\ -1,0,1\ sein\r\n@param\ dirX,das\ x-Koordinate\ \ darf\ nur\ -1,0,1\ sein\r\n@param\ return\ darf\ oder\ nicht\ diese\ bewegung\ gemacht\ werden?\r\n
+comment3.params=x\ y
+comment3.target=int\ maxAbs(int,\ int)
+comment3.text=\r\nDiese\ method\ bestimt,\ auf\ welche\ Qzadrat\ sich\ eine\ Position\ befindet.\r\n@param\ dirX,das\ x-Koordinate\ \ darf\ nur\ -1,0,1\ sein\r\n@param\ dirX,das\ x-Koordinate\ \ darf\ nur\ -1,0,1\ sein\r\n@param\ return\ darf\ oder\ nicht\ diese\ bewegung\ gemacht\ werden?\r\n
+numComments=4
