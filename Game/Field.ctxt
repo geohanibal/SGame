@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Field
+comment0.text=\r\n\ Diese\ Klasse\ repr\u00E4sentiert\ ein\ Spielfeld.\ Ihr\ Konstruktor\ bekommt\ dieses\ als\r\n\ String-Array\ \u00FCbergeben.\r\n\r\n\ @author\ Thomas\ R\u00F6fer\r\n
+comment1.params=field
+comment1.target=Field(java.lang.String[])
+comment1.text=\r\n\ Erzeugt\ ein\ neues\ Feld.\r\n\ @param\ field\ Die\ Feldbeschreibung.\ Jede\ zweite\ Spalte\ und\ Zeile\r\n\ \ \ \ \ \ \ \ \ enth\u00E4lt\ die\ eigentlichen\ Zellen.\ Dazwischen\ sind\ die\r\n\ \ \ \ \ \ \ \ \ Nachbarschaften\ vermerkt.\r\n
+comment2.params=x\ y
+comment2.target=char\ getCell(int,\ int)
+comment2.text=\r\n\ Liefert\ ein\ Zeichen\ der\ Feldbeschreibung.\r\n\ @param\ x\ Die\ horizontale\ Koordinate\ des\ Zeichens,\ das\r\n\ \ \ \ \ \ \ \ \ zur\u00FCckgeliefert\ wird.\r\n\ @param\ y\ Die\ vertikale\ Koordinate\ des\ Zeichens,\ das\r\n\ \ \ \ \ \ \ \ \ zur\u00FCckgeliefert\ wird.\r\n\ @return\ Das\ Zeichen\ an\ der\ entsprechenden\ Zelle\ oder\ ein\r\n\ \ \ \ \ \ \ \ \ Leerzeichen,\ wenn\ die\ Koordinaten\ au\u00DFerhalb\ der\r\n\ \ \ \ \ \ \ \ \ Beschreibung\ liegen.\r\n
+comment3.params=x\ y
+comment3.target=int\ getNeighborhood(int,\ int)
+comment3.text=\r\n\ Liefert\ die\ Nachbarschafts-Signatur\ einer\ Zelle\ der\r\n\ Feldbeschreibung\ zur\u00FCck.\r\n\ @param\ x\ Die\ horizontale\ Koordinate\ der\ Zelle,\ deren\r\n\ \ \ \ \ \ \ \ \ Nachbarschafts-Signatur\ zur\u00FCckgeliefert\ wird.\r\n\ @param\ y\ Die\ vertikale\ Koordinate\ der\ Zelle,\ deren\r\n\ \ \ \ \ \ \ \ \ Nachbarschafts-Signatur\ zur\u00FCckgeliefert\ wird.\r\n\ @return\ Die\ Signatur\ als\ Summe\ der\ Zahlen\ 1\ (x+1,\ y),\r\n\ \ \ \ \ \ \ \ \ 2\ (x,\ y+1),\ 4\ (x-1,\ y)\ und\ 8\ (x,\ y-1),\ wenn\ in\r\n\ \ \ \ \ \ \ \ \ der\ jeweilen\ Richtung\ eine\ Verbindung\ zum\ Nachbarn\r\n\ \ \ \ \ \ \ \ \ besteht.\r\n
+comment4.params=
+comment4.target=void\ test()
+comment4.text=Ein\ Testfall,\ der\ alle\ Nachbarschaften\ enth\u00E4lt.
+numComments=5

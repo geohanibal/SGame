@@ -13,6 +13,7 @@ class NPC
     /** @param Zählt die Anzahl der Schritte */
     private int stepCounter;
     
+    
 
     
     NPC(final GameObject bot,final int stepMax, int stepCounter){

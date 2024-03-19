@@ -17,6 +17,8 @@ abstract class PIGame extends Game
     static void main()
     {
         // Map Objecten
+        
+        /*
         new GameObject(0, 0, 0, "path-e");
         new GameObject(1, 0, 0, "path-i");
         new GameObject(2, 0, 1, "path-t");
@@ -39,7 +41,8 @@ abstract class PIGame extends Game
         new GameObject(3, 3, 0, "water-l");
         new GameObject(4, 3, 0, "water-i");
         
-        
+        */
+       Field.test();
         
         
         //NPC   
@@ -76,6 +79,7 @@ abstract class PIGame extends Game
           final int  key = getNextKey(); // final, es muss nicht gäendert werden
            
            // das ist nur für rules 
+           /*
             if (key == VK_RIGHT && rules.isLegal(player1, 1, 0)) {
                 player1.setRotation(0);
                 player1.setLocation(player1.getX() + 1, player1.getY());
@@ -95,10 +99,10 @@ abstract class PIGame extends Game
             else {
                 playSound("error");
                 continue;
-            }
+            }*/
            
            //das ist ein metho obiejt für Stoirung des Objekts
-          /* switch(key){
+           switch(key){
             case VK_RIGHT:
                 player1.setLocation(player1.getX() + 1,player1.getY());
                 player1.setRotation(0);
@@ -122,7 +126,7 @@ abstract class PIGame extends Game
             default:
                 playSound("error");
                 break; 
-         }; */
+         }; 
          
          playSound("step");
          sleep(200);
